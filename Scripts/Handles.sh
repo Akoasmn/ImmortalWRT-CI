@@ -55,21 +55,6 @@ if [ -f "$TS_FILE" ]; then
 	cd $PKG_PATH && echo "tailscale has been fixed!"
 fi
 
-#修复netspeedtest缺失的Python依赖
-if [ -d *"netspeedtest"* ]; then
-	echo " " && cd ./netspeedtest/
-
-	NS_FILE=$(find . -maxdepth 3 -type f -name "Makefile" -path "*/luci-app-netspeedtest/*")
-	if [ -f "$NS_FILE" ]; then
-		sed -i 's/+python3-pkg-resources/+python3-setuptools/g' "$NS_FILE"
-		echo "netspeedtest python dependencies have been fixed!"
-	else
-		echo "netspeedtest Makefile not found!"
-	fi
-
-	cd $PKG_PATH
-fi
-
 # #修复Rust编译失败
 # RUST_FILE=$(find ../feeds/packages/ -maxdepth 3 -type f -wholename "*/rust/Makefile")
 # if [ -f "$RUST_FILE" ]; then
