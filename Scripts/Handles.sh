@@ -27,15 +27,6 @@ PKG_PATH="$GITHUB_WORKSPACE/wrt/package/"
 # 	cd $PKG_PATH && echo "homeproxy date has been updated!"
 # fi
 
-# #修改argon主题字体和颜色
-# if [ -d *"luci-theme-argon"* ]; then
-# 	echo " " && cd ./luci-theme-argon/
-
-# 	sed -i "s/primary '.*'/primary '#31a1a1'/; s/'0.2'/'0.5'/; s/'none'/'bing'/; s/'600'/'normal'/" ./luci-app-argon-config/root/etc/config/argon
-
-# 	cd $PKG_PATH && echo "theme-argon has been fixed!"
-# fi
-
 #修改mini-diskmanager菜单位置
 if [ -d *"luci-app-mini-diskmanager"* ]; then
 	echo " " && cd ./luci-app-mini-diskmanager/
