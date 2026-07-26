@@ -67,7 +67,7 @@ UPDATE_PACKAGE "argon" "sbwml/luci-theme-argon" "openwrt-25.12"
 # UPDATE_PACKAGE "passwall" "Openwrt-Passwall/openwrt-passwall" "main" "pkg"
 # UPDATE_PACKAGE "passwall2" "Openwrt-Passwall/openwrt-passwall2" "main" "pkg"
 
-UPDATE_PACKAGE "luci-app-warp" "hxzlplp7/luci-app-warp" "main"
+UPDATE_PACKAGE "luci-app-warp" "akoasmn/luci-app-warp" "main"
 UPDATE_PACKAGE "luci-app-tailscale" "asvow/luci-app-tailscale" "main"
 UPDATE_PACKAGE "luci-app-turboacc" "akoasmn/turboacc" "luci"
 UPDATE_PACKAGE "luci-app-webdav" "sbwml/luci-app-webdav" "openwrt-24.10"
